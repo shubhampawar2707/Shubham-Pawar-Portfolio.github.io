@@ -186,8 +186,8 @@ section .title::after{
     text-align: center;  
     margin: 25px 12px;  
     font-size: 10px;  
-    width: 60px; 
-    height: 60px; 
+    width: 40px; 
+    height: 40px; 
     border-radius: 50%;
     overflow: hidden;
   }  
@@ -236,8 +236,8 @@ section .title::after{
     margin-top: 2%;
     margin-block-start: 0cqmax;
     padding:0px;
-    padding-top: 200px;
-    font-size: 30px;
+    padding-top: 150px;
+    font-size: 15px;
     line-height: 10px;
   
     
@@ -262,7 +262,7 @@ section .title::after{
 {
     justify-content: left;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 200px;
     padding-right: 50px;
     padding-bottom: 100px;
     padding-left: 100px;
