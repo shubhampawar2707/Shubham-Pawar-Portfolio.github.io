@@ -185,7 +185,7 @@ section .title::after{
     padding: 20px;  
     text-align: center;  
     margin: 25px 12px;  
-    font-size: 80px;  
+    font-size: 10px;  
     width: 60px; 
     height: 60px; 
     border-radius: 50%;
@@ -236,7 +236,7 @@ section .title::after{
     margin-top: 2%;
     margin-block-start: 0cqmax;
     padding:0px;
-    padding-top: 100px;
+    padding-top: 200px;
     font-size: 30px;
     line-height: 10px;
   
@@ -284,14 +284,14 @@ section .title::after{
     
 }
 .home .home-content .text-2{
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 600;
     margin-left: -3px;
     color: #111;
     text-align: center;
 }
 .home .home-content .text-3{
-    font-size: 50px;
+    font-size: 40px;
     margin: 5px 0;
     text-align: center;
     
