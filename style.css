@@ -236,7 +236,7 @@ section .title::after{
     margin-top: 2%;
     margin-block-start: 0cqmax;
     padding:0px;
-    padding-top: 200px;
+    padding-top: 150px;
     font-size: 40px;
     line-height: 10px;
   
@@ -261,7 +261,7 @@ section .title::after{
 {
     justify-content: left;
     align-items: center;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-right: 50px;
     padding-bottom: 100px;
     padding-left: 100px;
