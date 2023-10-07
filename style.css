@@ -236,7 +236,7 @@ section .title::after{
     margin-top: 2%;
     margin-block-start: 0cqmax;
     padding:0px;
-    padding-top: 100px;
+    padding-top: 60px;
     font-size: 40px;
     line-height: 10px;
   
@@ -256,7 +256,7 @@ section .title::after{
     border: 1px solid #ddd;
     margin: 10px;
     padding: 10px;
-    padding-top: 180px;
+    padding-top: 200px;
 }
 .home .max-width .home-content
 {
