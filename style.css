@@ -819,3 +819,12 @@ footer span a:hover{
         width: 100%;
     }
 }
+ @media only screen and (max-width: 600px)
+{
+            .max-width {
+                width: 100%;
+            }
+            .column {
+                display: none; /* Hide the image on smaller screens */
+            }
+        }
