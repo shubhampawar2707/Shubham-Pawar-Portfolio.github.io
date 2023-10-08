@@ -709,6 +709,10 @@ footer span a:hover{
         font-size: 23px;
         padding: 10px 30px;
     }
+    .home .max-width .column{
+        height: 250px;
+        width: 250px;
+    }
     .max-width{
         max-width: 930px;
     }
@@ -746,6 +750,10 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .home .max-width .column{
+        height: 230px;
+        width: 230px;
     }
     .services .serv-content .card{
         width: 100%;
