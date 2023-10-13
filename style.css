@@ -261,7 +261,7 @@ section .title::after{
 {
     justify-content: left;
     align-items: center;
-    padding-top: 500px;
+    padding-top: 400px;
     padding-right: 50px;
     padding-bottom: 100px;
     padding-left: 100px;
@@ -696,10 +696,10 @@ footer span a:hover{
         font-size: 25px;
     }
     .home .home-content .text-2{
-        font-size: 55px;
+        font-size: 50px;
     }
     .home .home-content .text-3{
-        font-size: 35px;
+        font-size: 30px;
     }
     .home .home-content a{
         font-size: 23px;
