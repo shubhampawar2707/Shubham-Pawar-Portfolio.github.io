@@ -272,8 +272,7 @@ section .title::after{
   display: flex;
   padding: 0cqmax;
   padding-top: 0cqmax;
-  max-width: 100%;
-  height: auto;
+
   
 }
 
