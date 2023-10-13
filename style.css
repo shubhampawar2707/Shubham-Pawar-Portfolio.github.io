@@ -236,7 +236,7 @@ section .title::after{
     margin-top: 0%;
     margin-block-start: 0cqmax;
     padding:0px;
-    padding-top: 270px;
+    padding-top: 200px;
     font-size: 15px;
     line-height: 10px;
   
@@ -245,24 +245,23 @@ section .title::after{
 .home .max-width .column{
     
     margin:0cqmax;
-    margin-top: 1000;
+    margin-top: 700;
     padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 200vh;
+    height: 1200px;
+    width: 200px;
     flex: 1;
-    border: 1px solid #ddd;
     margin: 10px;
     padding: 10px;
-    padding-top: 240px;
+    padding-top: 180px;
 }
 .home .max-width .home-content
 {
     justify-content: left;
     align-items: center;
-    padding-top: 250px;
+    padding-top: 500px;
     padding-right: 50px;
     padding-bottom: 100px;
     padding-left: 100px;
@@ -284,14 +283,14 @@ section .title::after{
     
 }
 .home .home-content .text-2{
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 600;
     margin-left: -3px;
     color: #111;
     text-align: center;
 }
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 50px;
     margin: 5px 0;
     text-align: center;
     
@@ -350,9 +349,6 @@ section .title::after{
 }
 .home .max-width .home-content{
     flex-basis: 55%;
-}
-.home .max-width .col3{
-    flex-basis: 50%;
 }
 
 
@@ -430,7 +426,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .services .serv-content .card a{
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     text-decoration: underline;
     display: inline-block;
@@ -711,7 +707,7 @@ footer span a:hover{
     }
     .home .max-width .column{
         height: 1000px;
-        width: 250px;
+        
     }
     .max-width{
         max-width: 930px;
@@ -753,7 +749,7 @@ footer span a:hover{
     }
     .home .max-width .column{
         height: 800px;
-        width: 230px;
+    
     }
     .services .serv-content .card{
         width: 100%;
@@ -790,7 +786,8 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-
-
-
-
+/*@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  }*/
