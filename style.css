@@ -250,8 +250,8 @@ section .title::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1200px;
-    width: 200px;
+    max-width: 100%;
+    height: auto;
     flex: 1;
     margin: 10px;
     padding: 10px;
