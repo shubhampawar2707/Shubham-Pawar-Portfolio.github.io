@@ -272,7 +272,6 @@ section .title::after{
   display: flex;
   padding: 0cqmax;
   padding-top: 0cqmax;
-
   
 }
 
@@ -787,7 +786,6 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-
 /*@media only screen and (max-width: 600px) {
     body {
       font-size: 14px;
