@@ -1,19 +1,20 @@
-/* Google Fonts */
+/*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-/* Global Reset */
-* {
+#a1{border: #111;}
+
+.typing{color: brown;}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
-html {
+html{
     scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar */
+/* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -23,28 +24,42 @@ html {
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-/* Section Defaults */
-section {
+/* all similar content styling codes */
+section{
     padding: 100px 0;
 }
-.max-width {
+.max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
-section .title {
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 60px;
+    padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before {
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -54,9 +69,19 @@ section .title::before {
     background: #111;
     transform: translateX(-50%);
 }
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: black;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
 
-/* Navbar Styling */
-.navbar {
+/* navbar styling */
+.navbar{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -64,96 +89,569 @@ section .title::before {
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky {
+.navbar.sticky{
     padding: 15px 0;
     background: black;
 }
-.navbar .max-width {
+.navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a {
+.navbar .max-width img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.navbar .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .menu li {
+.navbar .logo a span{
+    color: red;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a {
+.navbar .menu li a{
+    display: block;
     color: #fff;
-    font-size: 18px;
+    font-size: 28px;
+    font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+    text-shadow: 0cqmax;
 }
-.navbar .menu li a:hover {
+.navbar .menu li a:hover{
     color: crimson;
 }
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
 
-/* Home Section */
-.home {
-    height: 100vh;
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+
+/* home section styling */
+
+.home .max-width .home-content .demo1{
+    margin-top: 0cqmax;
+    font-size: 50px;
+    padding:0cqmax;
+    
+    padding-top: 0cqmax;
+}
+
+.fa {  
+    
+    padding: 12px;  
+    text-align: center;  
+    margin: 10px 10px;  
+    font-size: 10px;  
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    overflow: hidden;
+  }  
+
+  .fa-facebook {  
+    background: white;  
+    color: grey;  
+  }  
+  .fa-twitter {  
+    background: white;  
+    color: grey;  
+  }  
+  .fa-linkedin {  
+    background: white;  
+    color: grey;  
+  }  
+  .fa-instagram {  
+    background: white;  
+    color: grey;  
+  }  
+  .fa-whatsapp {  
+    background: white;  
+    color: grey;  
+  }  
+  .fa-github {  
+    background: white;  
+    color: grey;  
+  }  
+  .fa:hover {  
+    opacity: 0.9;  
+}  
+.home{
+    display: flex;
+    
     background-color: lightblue;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width .demo1
+{
+    margin-top: 0%;
+    margin-block-start: 0cqmax;
+    padding:0px;
+    padding-top: 200px;
+    font-size: 15px;
+    line-height: 10px;
+  
+    
+}
+.home .max-width .column{
+    
+    margin:0cqmax;
+    margin-top: 700;
+    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    height: 1200px;
+    width: 200px;
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 180px;
 }
-.home .home-content .text-1 {
+.home .max-width .home-content
+{
+    justify-content: left;
+    align-items: center;
+    padding-top: 300px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+  padding: 0cqmax;
+  padding-top: 0cqmax;
+  
+}
+
+.home .home-content .text-1{
     font-size: 40px;
-    color: black;
+    color :black;
+    text-align: center;
+   
+    
 }
-.home .home-content .text-2 {
+.home .home-content .text-2{
     font-size: 65px;
     font-weight: 600;
+    margin-left: -3px;
     color: #111;
+    text-align: center;
 }
-.home .home-content .text-3 {
+.home .home-content .text-3{
     font-size: 50px;
+    margin: 5px 0;
+    text-align: center;
+    
+    
+}
+.home .home-content .text-3 span{
     color: crimson;
     font-weight: 700;
 }
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 28px;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-weight: 400;
+    vertical-align: top;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    margin-left: 450px;
+}
+.home  .logo{
+    
+    display: inline-block;
+    background: blue;
+    color: blue;
+    font-size: 100px;
+    padding: 12px 36px;
+    margin-top: 50px;
+    font-weight: 500;
+    border-radius: 6px;
 
-/* About Section */
-.about .about-content .text {
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: white;
+    background: none;
+}
+.home .demo1 a:hover{
+    color: white;
+    background: blue;
+}
+.home .max-width
+{
+    display:contents;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.home .max-width .demo1{
+    flex-basis: 2%;
+}
+.home .max-width .home-content{
+    flex-basis: 55%;
+}
+
+
+
+/* about section styling */
+
+
+
+
+.about .about-content .text{
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content p {
-    text-align: justify;
-    font-size: 20px;
+.about .about-content  .text span{
+    color: crimson;
 }
-.about .about-content a {
+.about .about-content  p{
+    text-align: justify;
+    font-size: 25px;
+}
+.about .about-content  a{
     display: inline-block;
     background: crimson;
     color: #fff;
     font-size: 20px;
+    font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content  a:hover{
+    color: crimson;
+    background: none;
 }
 
-/* Services Section */
-.services {
+/* services section styling */
+
+.services, .teams{
+    color:#fff;
     background: lightblue;
-    color: #fff;
 }
-.services .serv-content .card {
+
+.services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover {
+.services .serv-content .card:hover{
     background: crimson;
 }
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.services .serv-content .card a{
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    display: inline-block;
+    background: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 3px solid black;
+    transition: all 0.3s ease;
+}
 
-/* Responsive Media Queries */
+
+/* skills section styling */
+
+.skills{
+    background: white;
+}
+
+.skills .skills-content .column{
+    width: calc(100% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+    font-size: 20px;
+
+}
+.skills .skills-content .left ul{
+    text-align: justify;
+    font-size: 20px;
+
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* teams section styling */
+
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: crimson;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid black!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: black!important;
+}
+
+/* contact section styling */
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
 @media (max-width: 991px) {
     .max-width {
         padding: 0 50px;
